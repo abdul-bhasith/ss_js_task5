@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        body{
+            align-items: center;
+            align-content: center;
+        }
+        form {
+            align-content: center;
+            
+        }
+        input {
+            height: 30px;
+            font-size: 20px;
+            border: 2px solid black;
+            border-radius: 4px;
+            text-align: center;
+            padding: 2px;
+            margin: 5px;
+        }
+        button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;   
+        }
+        
+        button:hover{
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id = "name" size="50" type="text" placeholder="Enter the name">
+        <br>
+        <br>
+        <input id = "email" size="50" type="text" placeholder="Enter the email">
+        <br>
+        <br>
+        <input id = "pword" size="50" type="password" placeholder="Enter the password">
+        
+        <button id = "chk" type ="button" onclick="check()">CHECK</button>
+    </form>
+</body>
+    <script>
+        function check(){
+            if(document.getElementById("name").value.length == 0){
+                alert("Please fill the name !! ")
+                return;
+            }
+            if(document.getElementById("email").value.length == 0){
+                alert("Please fill the email !! ")
+                return;
+            }
+            if(document.getElementById("pword").value.length == 0){
+                alert("Please fill the password !! ")
+                return;
+            }
+        }
+    </script>
+</html>
